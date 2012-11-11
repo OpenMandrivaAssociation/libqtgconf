@@ -1,0 +1,37 @@
+diff -urN libqtgconf-0.1.original//CMakeLists.txt libqtgconf-0.1/CMakeLists.txt
+--- libqtgconf-0.1.original//CMakeLists.txt	2011-01-14 17:51:45.000000000 +0000
++++ libqtgconf-0.1/CMakeLists.txt	2011-05-18 11:04:53.730103121 +0100
+@@ -80,12 +80,13 @@
+     )
+ 
+ # Install
+-set(IMPORT_INSTALL_DIR lib/qt4/imports/gconf)
++set(libdir CACHE PATH "libdir")
++set(QML_INSTALL_DIR ${libdir}/qt4/plugins/imports/gconf)
+ set(INCLUDE_INSTALL_DIR include/QtGConf)
+ 
+ ## QtGConf
+ install(TARGETS QtGConf
+-    LIBRARY DESTINATION lib${LIB_SUFFIX}
++    LIBRARY DESTINATION ${libdir}
+     )
+ 
+ install(FILES gconfitem-qml-wrapper.h
+@@ -94,14 +95,14 @@
+ 
+ # FIXME: Generate from ${CMAKE_INSTALL_PREFIX}
+ install(FILES libqtgconf.pc
+-    DESTINATION lib/pkgconfig
++    DESTINATION ${libdir}/pkgconfig
+     )
+ 
+ ## QtGConfQml
+ install(TARGETS QtGConfQml
+-    LIBRARY DESTINATION ${IMPORT_INSTALL_DIR}
++    LIBRARY DESTINATION ${QML_INSTALL_DIR}
+     )
+ 
+ install(FILES qmldir
+-    DESTINATION ${IMPORT_INSTALL_DIR}
++    DESTINATION ${QML_INSTALL_DIR}
+     )
