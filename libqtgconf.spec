@@ -66,3 +66,10 @@ popd build
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libqtgconf.pc
 
+
+
+%changelog
+* Mon Jan 23 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.1-1
++ Revision: 767394
+- imported package libqtgconf
+
