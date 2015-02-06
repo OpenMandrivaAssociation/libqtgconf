@@ -5,7 +5,7 @@
 Summary:	Qt binding and QML plugin for GConf
 Name:		libqtgconf
 Version:	0.1
-Release:	1
+Release:	2
 License:	LGPLv2
 Url:		http://launchpad.net/gconf-qt
 Group:		System/Libraries
