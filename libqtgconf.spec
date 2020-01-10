@@ -40,7 +40,7 @@ of libgq-gconf (see http://maemo.org/packages/view/libgq-gconf0/).
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 export BUILD_GLOBAL=true
