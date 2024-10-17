@@ -7,7 +7,7 @@ Name:		libqtgconf
 Version:	0.1
 Release:	2
 License:	LGPLv2
-Url:		http://launchpad.net/gconf-qt
+Url:		https://launchpad.net/gconf-qt
 Group:		System/Libraries
 Source0:	%{name}-%{version}.tar.bz2
 # PATCH-FIX-OPENSUSE - libqtgconf-cmake-libdir-fix.patch nmarques@opensuse.org -- not again...
